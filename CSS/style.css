@@ -672,69 +672,159 @@ footer{
     color: #FFF;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .navBar {
-        position: relative;
-        width: 100%;
-        background-color: white;
         justify-content: space-between;
     }
-    
+
     nav {
-        display: inline-flex;
-        width: 100%;
-        margin: auto;
-        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
     }
-    
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
     nav ul li {
         display: block;
         list-style: none;
         margin: 10px 20px;
     }
-    
+
+    .nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
     .herogrid {
-        display: block;
         grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: left;
+        gap: 3rem;
+        text-align: center;
     }
 
+    .heroright h1 {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+    }
+
+    .heroright p {
+        display: block;
+        font-size: 20px;
+        width: auto;
+    }
+
+    .resume {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    .resume i {
+        margin-left: 10px;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+      
     .skill-features {
-        flex-direction: column;
-        width: 400px;
+        padding: 50px 20px;
         height: 500px;
-        align-items: center;
-        justify-content: center;
-        background-color: #f5f5f5;
-        border-radius: 20px;
-        margin: auto;
-    }
-   
-    .detail{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;        
     }
 
-    .line{
+    .detail {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
         display: none;
     }
 
-    .Project-title h1{
+    .Project-title h1 {
         font-size: 30px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
     }
 
-    .grid{
-        grid-template-columns: max-content;
+    .grid {
+        display: flex;
         flex-direction: column;
+        justify-content: center; 
+        align-items: center;       
     }
+
+    .grid > * {
+        margin-bottom: 20px;
+    }
+
+    .container,
+    .container-2,
+    .container-3 {
+        width: 90%;
+        height: 600px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .img {
+        display: block;
+        margin: auto;
+        height: 296px;
+        top: 0;
+        left: 0;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .box {
+        margin-top: 200px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .content,
+    .content-2,
+    .content-3 {
+        padding: 25px 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .features {
+        margin-bottom: 15px;
+    }
+    .knowledge {
+        margin-top: 15px;
+    }
+
+    .detail
+    .skill-features .features,
+    .skill-features .knowledge {
+        display: flex;
+        justify-content: center; 
+        align-items: center;        
+    }
+    .skill-features .detail {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center
+    }
+    
 
 }
